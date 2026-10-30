@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Zhengfei Kuang Homepage</title>
+    <script src="media.js" defer></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <style>
         .navbar-brand {
@@ -25,7 +26,7 @@
 </head>
   <body>
    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     
         <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #212d69;">
             <div class="container-fluid">
@@ -37,6 +38,9 @@
                 <ul class="navbar-nav mb-2 mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#about" style="color:white">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects" style="color:white">Projects</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#publications"  style="color:white">Publications</a>
@@ -65,8 +69,8 @@
                   </p>
                   
                   <p class="text-dark">
-                    Previously, I was a Ph.D. student at the Stanford University, 
-                    primally advised by <a href=https://stanford.edu/~gordonwz> Prof. Gordon Wetzstein</a>. 
+                    I received my Ph.D. from Stanford University,
+                    where I was primarily advised by <a href=https://stanford.edu/~gordonwz> Prof. Gordon Wetzstein</a>.
                     Before Stanford, I was studying at the University of Southern California and Tsinghua University. 
                   
                     I also worked as a research assistant in the <a href="https://ict.usc.edu/">USC Institute for Creative Technologies</a> 
@@ -94,6 +98,51 @@
 
           <br> 
 
+          <section class="" id="projects">
+            <div class="text-center">
+              <h2 style="font-size:calc(12px + 0.7vw);"><b>Projects</b></h2>
+            </div>
+          </section>
+
+          <section class="container">
+            <div class="col-md-12 mt-5">
+              <ul class="publications list-unstyled">
+                <li class="mb-4" style="margin-bottom: 2vw;">
+                  <div class="row">
+                    <div class="col-md-2">
+
+                    </div>
+                    <div class="col-md-3 mb-2">
+                      <video autoplay loop muted playsinline preload="none" poster="projects/cosmos-simulation-poster.jpg" width="320" style="max-width: 100%; aspect-ratio: 640 / 360;" aria-label="Cosmos Simulation">
+                        <source data-src="projects/cosmos-simulation.mp4" type="video/mp4">
+                      </video>
+                    </div>
+
+                    <div class="col-md-5">
+                      <h2 class="section-heading" style="font-size: 105%;"><b>Cosmos Simulation</b></h2>
+                      <p class="text-dark mb-2">
+                        Use Cosmos world models for real-time, streaming simulation of camera navigation,
+                        robot manipulation, and autonomous driving.
+                      </p>
+                      <p>
+                        <a class="link mr-1 mb-1" href="https://research.nvidia.com/labs/cosmos-lab/cosmos-simulation/" style="text-transform: none; height: calc(1.8em + 0.3vw);">Project Page</a>
+                        &nbsp;
+                        <a class="link mr-1 mb-1" href="https://research.nvidia.com/labs/cosmos-lab/cosmos-simulation/technical-report.pdf" style="text-transform: none; height: calc(1.8em + 0.3vw);">Paper</a>
+                        &nbsp;
+                        <a class="link mr-1 mb-1" href="https://github.com/NVIDIA/cosmos" style="text-transform: none; height: calc(1.8em + 0.3vw);">Code</a>
+                        &nbsp;
+                        <a class="link mr-1 mb-1" href="https://huggingface.co/collections/nvidia/cosmos3-examples" style="text-transform: none; height: calc(1.8em + 0.3vw);">Models</a>
+                      </p>
+                    </div>
+                    <div class="col-md-2">
+
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+
           <section class="" id="publications">
             <div class="text-center">
               <h2 style="font-size:calc(12px + 0.7vw);"><b>Selected Publications</b></h2>
@@ -111,8 +160,8 @@
 
                         </div>
                       <div class="col-md-3 mb-2">
-                          <video autoplay loop muted playsinline width="320" height="auto" style="max-width: 100%;">
-                            <source src="projects/streetnvs.mp4" type="video/mp4" alt="streetnvs">
+                          <video autoplay loop muted playsinline preload="none" poster="projects/streetnvs-poster.jpg" width="320" style="max-width: 100%; aspect-ratio: 640 / 368;" aria-label="StreetNVS">
+                            <source data-src="projects/streetnvs.mp4" type="video/mp4">
                           </video>
                       </div>
 
@@ -130,7 +179,7 @@
                           <a class="text-dark" href="https://lioryariv.github.io/">Lior Yariv</a>,
                           <a class="text-dark" href="https://stanford.edu/~gordonwz/">Gordon Wetzstein</a></i>
                         </p>
-                        <p class="text-dark mb-2">arXiv 2026</p>
+                        <p class="text-dark mb-2">NeurIPS 2026</p>
                         <p>
                             <a class="link mr-1 mb-1" href="https://streetnvs.github.io/" style="text-transform: none; height: calc(1.8em + 0.3vw);" >Project Page</a>
                             &nbsp;
@@ -149,8 +198,8 @@
 
                         </div>
                       <div class="col-md-3 mb-2">
-                          <video autoplay loop muted playsinline width="320" height="auto" style="max-width: 100%;">
-                            <source src="projects/geoflow.mp4" type="video/mp4" alt="geoflow">
+                          <video autoplay loop muted playsinline preload="none" poster="projects/geoflow-poster.jpg" width="320" style="max-width: 100%; aspect-ratio: 640 / 370;" aria-label="GeoFlow">
+                            <source data-src="projects/geoflow.mp4" type="video/mp4">
                           </video>
                       </div>
 
@@ -186,8 +235,8 @@
                           <!-- <video autoplay loop muted playsinline width="320" height="auto" style="max-width: 100%;">
                             <source src="projects/relitlrm/envmap_rotate.gif" type="video/mp4" alt="relitlrm">
                           </video> -->
-                          <video autoplay loop muted playsinline width="320" height="auto" style="max-width: 100%;">
-                            <source src="projects/vulcan.mp4" type="video/mp4" alt="vulcan">
+                          <video autoplay loop muted playsinline preload="none" poster="projects/vulcan-poster.jpg" width="320" style="max-width: 100%; aspect-ratio: 640 / 312;" aria-label="VULCAN">
+                            <source data-src="projects/vulcan.mp4" type="video/mp4">
                           </video>
                       </div>
         
@@ -229,8 +278,8 @@
                           <!-- <video autoplay loop muted playsinline width="320" height="auto" style="max-width: 100%;">
                             <source src="projects/relitlrm/envmap_rotate.gif" type="video/mp4" alt="relitlrm">
                           </video> -->
-                          <video autoplay loop muted playsinline width="320" height="auto" style="max-width: 100%;">
-                            <source src="projects/bullettime.mp4" type="video/mp4" alt="bullettime">
+                          <video autoplay loop muted playsinline preload="none" poster="projects/bullettime-poster.jpg" width="320" style="max-width: 100%; aspect-ratio: 640 / 384;" aria-label="BulletTime">
+                            <source data-src="projects/bullettime.mp4" type="video/mp4">
                           </video>
                       </div> 
         
@@ -273,8 +322,8 @@
              
                         </div>
                       <div class="col-md-3 mb-2">
-                          <video autoplay loop muted playsinline width="320" height="auto" style="max-width: 100%;">
-                            <source src="projects/bufferanytime.mp4" type="video/mp4" alt="bufferanytime">
+                          <video autoplay loop muted playsinline preload="none" poster="projects/bufferanytime-poster.jpg" width="320" style="max-width: 100%; aspect-ratio: 640 / 396;" aria-label="Buffer Anytime">
+                            <source data-src="projects/bufferanytime.mp4" type="video/mp4">
                           </video>
                       </div> 
         
@@ -320,7 +369,9 @@
                           <!-- <video autoplay loop muted playsinline width="320" height="auto" style="max-width: 100%;">
                             <source src="projects/bufferanytime.mp4" type="video/mp4" alt="bufferanytime">
                           </video> -->
-                          <img width="320" height="auto"  src="projects/xdyna.gif" class="img-fluid" alt="nspose">
+                          <video autoplay loop muted playsinline preload="none" poster="projects/xdyna-poster.jpg" width="320" class="img-fluid" style="aspect-ratio: 600 / 524;" aria-label="X-Dyna">
+                            <source data-src="projects/xdyna.mp4" type="video/mp4">
+                          </video>
                       </div> 
         
                       <div class="col-md-5">
@@ -373,7 +424,9 @@
                           <!-- <video autoplay loop muted playsinline width="320" height="auto" style="max-width: 100%;">
                             <source src="projects/relitlrm/envmap_rotate.gif" type="video/mp4" alt="relitlrm">
                           </video> -->
-                          <img width="320" height="auto"  src="projects/relitlrm.gif" class="img-fluid" alt="nspose">
+                          <video autoplay loop muted playsinline preload="none" poster="projects/relitlrm-poster.jpg" width="320" class="img-fluid" style="aspect-ratio: 640 / 360;" aria-label="RelitLRM">
+                            <source data-src="projects/relitlrm.mp4" type="video/mp4">
+                          </video>
                       </div> 
         
                       <div class="col-md-5">
@@ -420,7 +473,9 @@
                           <!-- <video autoplay loop muted playsinline width="320" height="auto" style="max-width: 100%;">
                             <source src="projects/relitlrm/envmap_rotate.gif" type="video/mp4" alt="relitlrm">
                           </video> -->
-                          <img width="320" height="auto"  src="projects/CVD.gif" class="img-fluid" alt="nspose">
+                          <video autoplay loop muted playsinline preload="none" poster="projects/CVD-poster.jpg" width="320" class="img-fluid" style="aspect-ratio: 640 / 386;" aria-label="Collaborative Video Diffusion">
+                            <source data-src="projects/CVD.mp4" type="video/mp4">
+                          </video>
                       </div> 
         
                       <div class="col-md-5">
@@ -462,7 +517,9 @@
                           <!-- <video autoplay loop muted playsinline width="320" height="auto" style="max-width: 100%;">
                             <source src="projects/relitlrm/envmap_rotate.gif" type="video/mp4" alt="relitlrm">
                           </video> -->
-                          <img width="320" height="auto"  src="projects/stanford-orb.gif" class="img-fluid" alt="nspose">
+                          <video autoplay loop muted playsinline preload="none" poster="projects/stanford-orb-poster.jpg" width="320" class="img-fluid" style="aspect-ratio: 536 / 490;" aria-label="Stanford-ORB">
+                            <source data-src="projects/stanford-orb.mp4" type="video/mp4">
+                          </video>
                       </div> 
         
                       <div class="col-md-5">
@@ -500,8 +557,8 @@
              
                         </div>
                       <div class="col-md-3 mb-2">
-                          <video autoplay loop muted playsinline width="320" height="auto" style="max-width: 100%;">
-                            <source src="projects/palettenerf.mp4" type="video/mp4" alt="relitlrm">
+                          <video autoplay loop muted playsinline preload="none" poster="projects/palettenerf-poster.jpg" width="320" style="max-width: 100%; aspect-ratio: 640 / 478;" aria-label="PaletteNeRF">
+                            <source data-src="projects/palettenerf.mp4" type="video/mp4">
                           </video>
                           <!-- <img width="320" height="auto"  src="projects/palettenerf.mp4" class="img-fluid" alt="nspose"> -->
                       </div> 
@@ -541,7 +598,9 @@
               
                         </div>
                       <div class="col-md-3 mb-2">
-                        <img width="320" height="auto"  src="projects/neroic.gif" class="img-fluid" alt="densegap">
+                        <video autoplay loop muted playsinline preload="none" poster="projects/neroic-poster.jpg" width="320" class="img-fluid" style="aspect-ratio: 500 / 350;" aria-label="NeROIC">
+                          <source data-src="projects/neroic.mp4" type="video/mp4">
+                        </video>
                       </div>
         
                       <div class="col-md-5">
@@ -575,7 +634,7 @@
               
                         </div>
                       <div class="col-md-3 mb-2">
-                        <img width="320" height="auto"  src="projects/densegap.jpeg" class="img-fluid" alt="densegap">
+                        <img width="320" height="auto" src="projects/densegap.jpeg" class="img-fluid" alt="DenseGAP" loading="lazy" decoding="async">
                       </div>
         
                       <div class="col-md-5">
@@ -609,8 +668,8 @@
               
                         </div>
                       <div class="col-md-3 mb-2">
-                          <video autoplay loop muted playsinline width="320" height="auto" style="max-width: 100%; ">
-                            <source src="projects/facerig.mp4" type="video/mp4" alt="gimo">
+                          <video autoplay loop muted playsinline preload="none" poster="projects/facerig-poster.jpg" width="320" style="max-width: 100%; aspect-ratio: 640 / 360;" aria-label="Dynamic Facial Asset and Rig Generation">
+                            <source data-src="projects/facerig.mp4" type="video/mp4">
                           </video>
                       </div>
         
@@ -651,7 +710,7 @@
   
       
 
-          <section class="" id="publications">
+          <section class="" id="misc">
             <div class="text-center">
               <h2 style="font-size:calc(12px + 0.7vw);"><b>Misc</b></h2>
             </div>
@@ -667,25 +726,31 @@
            
                       </div>
       
-                    <div class="col-md-8" >
-                      I'm living with two cats, Waffle (<i>Left</i>) and Mochi (<i>Right</i>). 
-                      Never get tired of watching them play fight
-                      (<a class="link mr-1 mb-1" href="img/fight.mp4" style="height: calc(1.8em + 0.3vw);" >Video</a>).
                     <div class="col-md-8">
-                  </div>              
-                  <br>    
-                  <div class="row">
-                
-                    <div class="col-md-1">
-           
+                      <p>
+                        I'm living with a dog and two cats, Waffle (<i>Left</i>), Liz (<i>Middle</i>) and Mochi (<i>Right</i>).
+                      </p>
+                      <p class="mb-1">
+                        Cats play fight
+                        (<a class="link mr-1 mb-1" href="img/fight.mp4" style="height: calc(1.8em + 0.3vw);">Video</a>).
+                      </p>
+                      <p>
+                        Cat and dog sharing a cage
+                        (<a class="link mr-1 mb-1" href="img/cat-and-dog-sharing-a-cage.jpg" style="height: calc(1.8em + 0.3vw);">Image</a>).
+                      </p>
+                      <br>
+                      <div class="row">
+                        <div class="col-md-4 mb-3">
+                          <img src="img/waffle.jpg" class="img-fluid" alt="Waffle" loading="lazy" decoding="async" style="width: 100%; aspect-ratio: 4 / 3; object-fit: cover;">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                          <img src="img/liz.jpg" class="img-fluid" alt="Liz" loading="lazy" decoding="async" style="width: 100%; aspect-ratio: 4 / 3; object-fit: cover;">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                          <img src="img/mochi.jpg" class="img-fluid" alt="Mochi" loading="lazy" decoding="async" style="width: 100%; aspect-ratio: 4 / 3; object-fit: cover;">
+                        </div>
+                      </div>
                     </div>
-                    <div class="col-md-5">
-                      <img src="img/waffle.jpg" class="img-fluid" alt="waffle">
-                    </div>
-                    <div class="col-md-5">
-                      <img src="img/mochi.jpg" class="img-fluid" alt="mochi">
-                    </div>
-                </div>
                   </div>
                 </li>
               </ul>
@@ -698,6 +763,5 @@
             <div class="col-md-12 mt-5">
             </div>
           </section>
-        </section>
 </body>
 </html>
